@@ -1,0 +1,6 @@
+yellow - #fff95b  #2c3500
+violet - #c382bd #360630
+green - #5e907f #04231a
+pink - #f87e86 #011f3b
+blue - #6b90ab #011a30
+purple #8475ba  201152

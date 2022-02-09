@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[67,66],{"37Ea":function(o,c,r){o.exports={customMedia:{},customProperties:{"--max-content-width":"1400px","--color-text":"#34363E","--color-text-offset":"rgba(30, 30, 62, 0.75)","--color-bg-secondary":"#c2d5d8","--color-bg-primary":"#fff","--color-bg-primary-offset":"#eee","--scrollbar-color":"#c2d5d8"},customSelectors:{}}}}]);
+//# sourceMappingURL=67-f1595fc4fe5914f704bf.js.map

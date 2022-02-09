@@ -1,0 +1,325 @@
+
+.slider {
+    height: 35vw;
+    overflow: hidden;
+}
+
+/* -------------------------------------------------------- description */
+
+.input-slide {
+    display: none;
+}
+
+.slider > .slide-description > label {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: default;
+
+    z-index: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.slider > #input-slide-0:checked ~ .slide-description > .slide-0,
+.slider > #input-slide-1:checked ~ .slide-description > .slide-1,
+.slider > #input-slide-2:checked ~ .slide-description > .slide-2,
+.slider > #input-slide-3:checked ~ .slide-description > .slide-3 {
+    z-index: 2;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* -------------------------------------------------------- autoplay */
+
+/* -------------------------------------------------------- autoplay slide */
+@-webkit-keyframes slide {
+    0%, 100% {
+        opacity: 0;
+    }
+    6%, 25% {
+        opacity: 1;
+        z-index: 2;
+    }
+    30%, 50% {
+        opacity: 0;
+        z-index: 2;
+    }
+}
+
+@-moz-keyframes slide {
+    0%, 100% {
+        opacity: 0;
+    }
+    6%, 24% {
+        opacity: 1;
+        z-index: 2;
+    }
+    30%, 50% {
+        opacity: 0;
+        z-index: 2;
+    }
+}
+
+@-ms-keyframes slide {
+    0%, 100% {
+        opacity: 0;
+    }
+    6%, 25% {
+        opacity: 1;
+        z-index: 2;
+    }
+    30%, 50% {
+        opacity: 0;
+        z-index: 2;
+    }
+}
+
+@-o-keyframes slide {
+    0%, 100% {
+        opacity: 0;
+    }
+    6%, 25% {
+        opacity: 1;
+        z-index: 2;
+    }
+    30%, 50% {
+        opacity: 0;
+        z-index: 2;
+    }
+}
+
+@keyframes slide {
+    0%, 100% {
+        opacity: 0;
+    }
+    6%, 25% {
+        opacity: 1;
+        z-index: 2;
+    }
+    30%, 50% {
+        opacity: 0;
+        z-index: 2;
+    }
+}
+
+/* -------------------------------------------------------- autoplay description */
+@-webkit-keyframes description {
+    0%, 5% {
+        opacity: 0;
+        z-index: 2;
+        visibility: visible;
+    }
+    6%, 24% {
+        opacity: 1;
+        z-index: 2;
+        visibility: visible;
+    }
+    25%, 100% {
+        opacity: 0;
+        z-index: 0;
+        visibility: hidden;
+    }
+}
+
+@-moz-keyframes description {
+    0%, 5% {
+        opacity: 0;
+        z-index: 2;
+        visibility: visible;
+    }
+    6%, 24% {
+        opacity: 1;
+        z-index: 2;
+        visibility: visible;
+    }
+    25%, 100% {
+        opacity: 0;
+        z-index: 0;
+        visibility: hidden;
+    }
+}
+
+@-ms-keyframes description {
+    0%, 5% {
+        opacity: 0;
+        z-index: 2;
+        visibility: visible;
+    }
+    6%, 24% {
+        opacity: 1;
+        z-index: 2;
+        visibility: visible;
+    }
+    25%, 100% {
+        opacity: 0;
+        z-index: 0;
+        visibility: hidden;
+    }
+}
+
+@-o-keyframes description {
+    0%, 5% {
+        opacity: 0;
+        z-index: 2;
+        visibility: visible;
+    }
+    6%, 24% {
+        opacity: 1;
+        z-index: 2;
+        visibility: visible;
+    }
+    25%, 100% {
+        opacity: 0;
+        z-index: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes description {
+    0%, 5% {
+        opacity: 0;
+        z-index: 2;
+        visibility: visible;
+    }
+    6%, 24% {
+        opacity: 1;
+        z-index: 2;
+        visibility: visible;
+    }
+    25%, 100% {
+        opacity: 0;
+        z-index: 0;
+        visibility: hidden;
+    }
+}
+
+.slider > #input-slide-autoplay:checked ~ .slide-description > .slide-0 {
+    -webkit-animation: description 20000ms infinite -2000ms ease;
+    -moz-animation: description 20000ms infinite -2000ms ease;
+    -ms-animation: description 20000ms infinite -2000ms ease;
+    -o-animation: description 20000ms infinite -2000ms ease;
+    animation: description 20000ms infinite -2000ms ease;
+}
+
+.slider > #input-slide-autoplay:checked ~ .slide-description > .slide-1 {
+    -webkit-animation: description 20000ms infinite 3000ms ease;
+    -moz-animation: description 20000ms infinite 3000ms ease;
+    -ms-animation: description 20000ms infinite 3000ms ease;
+    -o-animation: description 20000ms infinite 3000ms ease;
+    animation: description 20000ms infinite 3000ms ease;
+}
+
+.slider > #input-slide-autoplay:checked ~ .slide-description > .slide-2 {
+    -webkit-animation: description 20000ms infinite 8000ms ease;
+    -moz-animation: description 20000ms infinite 8000ms ease;
+    -ms-animation: description 20000ms infinite 8000ms ease;
+    -o-animation: description 20000ms infinite 8000ms ease;
+    animation: description 20000ms infinite 8000ms ease;
+}
+
+.slider > #input-slide-autoplay:checked ~ .slide-description > .slide-3 {
+    -webkit-animation: description 20000ms infinite 13000ms ease;
+    -moz-animation: description 20000ms infinite 13000ms ease;
+    -ms-animation: description 20000ms infinite 13000ms ease;
+    -o-animation: description 20000ms infinite 13000ms ease;
+    animation: description 20000ms infinite 13000ms ease;
+}
+
+.slider > #input-slide-autoplay:checked ~ .slide-description > label {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.mainTitle {
+    margin-top: 7%;
+    padding: 5% 5%;
+    text-align: left;
+    position: relative;
+    font-weight: 500;
+    font-size: 90px;
+    color: #353944;
+    line-height: 120px;
+}
+
+@media screen and (min-width: 2400px) {
+    .mainTitle {
+        padding: 15% 0;
+    }
+}
+
+
+@media screen and (max-width: 1370px) {
+    .slider {
+        height: 45vw;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .slider {
+        height: 60vw;
+    }
+    .mainTitle {
+        padding: 15% 0;
+        font-size: 75px;
+    }
+}
+
+@media screen and (max-width: 801px) {
+    .mainTitle {
+        font-size: 60px;
+        line-height: 90px;
+        padding: 10% 0;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .mainTitle {
+        font-size: 50px;
+        line-height: 70px;
+    }
+    .slider {
+        height: 60vw;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .mainTitle {
+        font-size: 35px;
+        line-height: 60px;
+    }
+    .slide-3 {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .slider {
+        height: 70vw;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .mainTitle {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+@media screen and (max-width: 290px) {
+    .slider {
+        height: 85vw;
+    }
+    .mainTitle {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}

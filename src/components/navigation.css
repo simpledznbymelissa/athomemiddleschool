@@ -1,0 +1,323 @@
+/* Nav bar */
+/*COLORS*/
+/*color: #5d6578; gray */
+/*color: #353944; black*/
+
+
+.logo {
+    font-weight: 600;
+    font-size: 30px;
+    color: #464755;
+    margin-top: 15px;
+}
+
+@media (max-width: 400px) {
+    .logo {
+        font-size: 25px;
+    }
+}
+
+.logo:hover {
+    color: #94e7ec !important;
+}
+
+.logowhite {
+    font-weight: 800;
+    font-size: 30px;
+    color: #d5e4ee;
+    position: absolute;
+    left: 2%;
+    margin-top: 25px;
+}
+
+.lighterwhite {
+    color: #fff;
+
+}
+
+.darker {
+    /*color: #3aaeb6;*/
+    color: #353944;
+}
+
+.mid {
+    font-weight: 200;
+}
+
+@media (max-width: 500px) {
+    .mid {
+        font-weight: 300;
+    }
+}
+
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        width: 100%;
+    }
+
+    .navWrapper {
+        padding: 20px 30px;
+    }
+
+    @media (max-width: 800px) {
+        .navWrapper {
+            padding: 30px 30px;
+        }
+
+    }
+
+    .navList {
+        margin-top: -34px !important;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: flex-end;
+        list-style-type: none;
+        height: auto;
+        max-height: 0;
+    }
+
+    .navitem + .navItem {
+        margin-top: 12px;
+    }
+
+    .navLinkWhite {
+        padding: 0.5rem;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #4b515f;
+        transition: color 0.25s ease-in-out;
+    }
+
+    .navLink {
+        padding: 0.5rem;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #353944;
+        transition: color 0.25s ease-in-out;
+    }
+
+    .navLink:hover {
+        color: #94e7ec !important;
+    }
+
+    .navLinkWhite:hover {
+        color: #eaf3fc;
+    }
+
+    .navButton {
+        background-color: transparent;
+        border: none;
+        transition: all 0.2s cubic-bezier(0, 1.26, 0.8, 1.28);
+    }
+
+    .navButton:hover {
+        background-color: transparent;
+        cursor: pointer;
+        color: #f2f2f2;
+        border-color: transparent;
+        transform: scale(1.2, 1.2);
+
+    }
+
+    p.icon {
+        width: 25px;
+        height: 2px;
+        background-color: #fff;
+        margin: 10px 20px;
+    }
+
+    nav h2 {
+        margin: 20px
+    }
+
+    .navButton:active {
+        border-color: transparent;
+        background-color: transparent;
+    }
+
+    /* ************************Menu mobile ************************************************* */
+    .mobileList {
+        padding-top: 15% !important;
+        position: relative;
+        text-align: center;
+        z-index: 3;
+    }
+
+    .gradanimate {
+        background: linear-gradient(180deg, #42c6cf, #abf0da);
+    }
+
+    /* background changes to multiple colors*/
+    /*background-color: #2ecc71;*/
+    /*background-color: #91eae4;*/
+    /*animation: hue 11s linear 0s infinite reverse;*/
+    /*position: relative;*/
+    /*z-index: 0;}*/
+    /*.gradanimate::before {*/
+    /*background: linear-gradient(180deg, rgba(255, 255, 255, 0), #7f7fd5);*/
+    /*animation: hue 12s linear 1s infinite;*/
+    /*}*/
+    /*.gradanimate::before {*/
+    /*background: linear-gradient(180deg, #42c6cf, #abf0da);*/
+    /*animation: hue 12s linear 1s infinite;}*/
+    @keyframes hue {
+        to {
+            filter: hue-rotate(1turn);
+        }
+    }
+
+    .full {
+        display: flex;
+        justify-content: center;
+        /*width: 100vw;*/
+        height: 100vh;
+        color: white;
+        font-size: 48px;
+    }
+
+    .full::before {
+        content: '';
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .full::after {
+        /*content: 'Hue hue hue';*/
+        position: relative;
+        text-align: center;
+    }
+
+    @media (max-height: 550px) {
+        .full {
+            height: 100%;
+
+        }
+    }
+
+    /* *************************Links******************************************************* */
+    a {
+        font-weight: bold;
+        text-decoration: none;
+        color: #353944;
+        transition: color 0.25s ease-in-out;
+    }
+
+    a:focus,
+    a:hover {
+        color: #ececec;
+    }
+
+    /* ************************Media Queries********************************************** */
+    @media (max-width: 767px) {
+        .buttonTop {
+            margin-top: -3em;
+            margin-left: 16em;
+        }
+
+        .navListWrapper {
+            display: none;
+        }
+
+        .navWrapper {
+            display: flex;
+            /*justify-content: flex-end;*/
+        }
+
+        .portfolioGrid {
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .buttonTop {
+            margin-left: 6em;
+        }
+    }
+
+    @media (max-width: 450px) {
+        .buttonTop {
+            margin-left: 1.4em;
+            margin-top: -3.6em;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .heading {
+            font-size: 48px;
+        }
+
+        .subheading {
+            font-size: 36px;
+        }
+
+        .navList {
+            flex-direction: row;
+            justify-content: flex-end;
+            max-height: 1000px;
+        }
+
+        .navitem + .navItem {
+            margin-top: 0;
+            margin-left: 32px;
+        }
+
+        .navButton {
+            display: none;
+        }
+
+        .mobileMenu {
+            display: none;
+        }
+    }
+
+    /* Breakpoint for tablets */
+    @media (min-width: 576px) {
+        .container {
+            max-width: 540px;
+        }
+    }
+
+    /* Breakpoint for small desktops */
+    @media (min-width: 768px) {
+        .container {
+            max-width: 720px;
+        }
+
+        .heading {
+            font-size: 72px;
+        }
+
+        .subheading {
+            font-size: 48px;
+        }
+
+        .text {
+            font-size: 18px;
+        }
+    }
+
+    /* Breakpoint for medium desktops */
+    @media (min-width: 992px) {
+        .container {
+            max-width: 960px;
+        }
+
+        .text {
+            font-size: 21px;
+        }
+    }
+
+    /* Breakpoint for large desktops and HD devices */
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1140px;
+        }
+    }
+

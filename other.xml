@@ -1,0 +1,46 @@
+<application>
+  <component name="NodeJsLocalInterpreters">
+    <local-interpreter path="C:/Program Files/nodejs/node.exe">
+      <version-cache version="14.15.3" last-modified="1608229280000" />
+    </local-interpreter>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ColorChooser.RecentColors" value="177-191-243-255,,,183-201-245-255,,,114-173-198-255,,,113-108-166-255,,,121-155-224-255,,,76-224-230-255,,,49-121-163-255,,,81-99-180-255,,,135-166-233-255,,,71-151-187-255,,,123-149-248-255,,,59-146-197-255,,,105-142-208-255,,,133-146-204-255,,,89-164-173-255,,,109-156-219-255,,,249-212-64-255,,,102-113-149-255,,,68-74-99-255,,,175-175-175-255" />
+    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.5149007" />
+    <property name="CommitChangeListDialog.SPLITTER_PROPORTION_2" value="0.6172414" />
+    <property name="Copy.OpenInEditor" value="true" />
+    <property name="Darcula.SavedEditorTheme" value="_@user_High сontrast" />
+    <property name="ExpandBeforeRunStepsPanel" value="true" />
+    <property name="ExpandRunDashboardTypesPanel" value="false" />
+    <property name="FindSplitterProportion" value="0.42521632" />
+    <property name="InstalledPluginsSearchHistory" value="es&#10;prettier&#10;Enable Version Control Integration" />
+    <property name="LayoutCode.codeCleanup" value="true" />
+    <property name="LayoutCode.optimizeImports" value="true" />
+    <property name="LayoutCode.processChangedText" value="false" />
+    <property name="LayoutCode.rearrangeEntries" value="true" />
+    <property name="MoveFile.OpenInEditor" value="true" />
+    <property name="PluginConfigurable.selectionTab" value="1" />
+    <property name="SettingsSearchHistory" value="repository&#10;github&#10;unused de&#10;regular&#10;format on save" />
+    <property name="SplitFileEditor.Proportion" value="0.6945565" />
+    <property name="TextEditorWithPreview.SplitterProportionKey" value="0.77251184" />
+    <property name="WebStorm.enableDefaultTooltipFixes" value="true" />
+    <property name="WebStorm.enableSmartQuotes" value="true" />
+    <property name="WebStorm.initialConfigurationShown" value="true" />
+    <property name="com.intellij.history.integration.ui.views.DirectoryHistoryDialog.0" value="300" />
+    <property name="com.intellij.history.integration.ui.views.FileHistoryDialog.0" value="209" />
+    <property name="com.intellij.history.integration.ui.views.FileHistoryDialog.1" value="800" />
+    <property name="com.intellij.history.integration.ui.views.SelectionHistoryDialog.0" value="300" />
+    <property name="com.intellij.history.integration.ui.views.SelectionHistoryDialog.1" value="800" />
+    <property name="evlsprt3.183" value="13" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/Desktop/MyWebsites/TapMap&#10;C:/Users/brown/Desktop/6thGrade&#10;C:/Users/brown/Desktop/homeschool&#10;C:/Users/brown/Desktop/lynda-gatsby&#10;C:/Users/brown/Desktop/gats-artists - Copy (2)&#10;C:/Users/brown/Desktop/MyWebsites/Map-Quiz-master (1)&#10;C:/Users/brown/Desktop/Flying_birds&#10;C:/Users/brown/Desktop/MyWebsites/mapGame - Copy&#10;C:/Users/brown/Desktop/6thGrade - Copy&#10;C:/Users/brown/Desktop/Map-Quiz-master (1)&#10;C:/Users/brown/Desktop/europe.json&#10;C:/Users/brown/Desktop/Map-Quiz-master (1) - Copy&#10;C:/Users/brown/Desktop/artists&#10;C:/Users/brown/Desktop/MyWebsites/ASU-Canoe&#10;C:/Users/brown/Desktop/poets - Copy&#10;C:/Users/brown/Desktop/6thGrade/subjects/artists.html&#10;C:/Users/brown/Desktop/gatsby - Copy&#10;C:/Users/brown/Desktop/gatsby&#10;C:/Users/brown/Desktop/gatsby/my-gatsby-project/lynda-gatsby&#10;C:/Users/brown/Desktop/headshots-artists/duotone/davinci.png&#10;C:/Users/brown/Desktop/isis-coco&#10;C:/Users/brown/Desktop/FileSaver.js-master&#10;C:/Users/brown/Desktop/6thGrade -Works - Copy (2)&#10;C:/Users/brown/Desktop/6thGrade - Copy - Copy&#10;C:/Users/brown/Desktop/6thGrade -Works&#10;C:/Users/brown/Desktop/6thGrade - Works&#10;C:/Users/brown/Desktop/Week1&#10;C:/Users/brown/Desktop/HomeschoolSite&#10;C:/Users/brown/Desktop&#10;C:/Users/brown/Desktop/Animations" />
+    <property name="file.gist.reindex.count" value="799084" />
+    <property name="fileTypeChangedCounter" value="2" />
+    <property name="find.popup.splitter" value="0.61077845" />
+    <property name="js.chrome.debugger.port.98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" value="59347" />
+    <property name="mt.showStatisticsAgreement" value="true" />
+    <property name="selected.color.option.type" value="JS.REGEXP" />
+    <property name="structural.search.match.case" value="true" />
+    <property name="structural.search.recursive" value="true" />
+    <property name="ts.lib.d.ts.version" value="3.2.1" />
+  </component>
+</application>

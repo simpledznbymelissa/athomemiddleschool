@@ -1,0 +1,468 @@
+:root {
+    --bubble2: rgba(66, 198, 207, 0.78);
+    /*change within inline div styles "--bubble2": "rgba(59, 181, 207, .36)"*/
+}
+
+/*Bubbles moving*/
+@-webkit-keyframes a {
+    0% {
+        -webkit-transform: translate3d(-5%, 0, 0);
+        transform: translate3d(-5%, 0, 0)
+    }
+    to {
+        -webkit-transform: translate3d(5%, 0, 0);
+        transform: translate3d(5%, 0, 0)
+    }
+}
+
+@keyframes a {
+    0% {
+        -webkit-transform: translate3d(-5%, 0, 0);
+        transform: translate3d(-5%, 0, 0)
+    }
+    to {
+        -webkit-transform: translate3d(5%, 0, 0);
+        transform: translate3d(5%, 0, 0)
+    }
+}
+
+@-webkit-keyframes b {
+    0% {
+        -webkit-transform: translate3d(0, 10%, 0);
+        transform: translate3d(0, 10%, 0)
+    }
+    to {
+        -webkit-transform: translate3d(0, -10%, 0);
+        transform: translate3d(0, -10%, 0)
+    }
+}
+
+@keyframes b {
+    0% {
+        -webkit-transform: translate3d(0, 10%, 0);
+        transform: translate3d(0, 10%, 0)
+    }
+    to {
+        -webkit-transform: translate3d(0, -10%, 0);
+        transform: translate3d(0, -10%, 0)
+    }
+}
+
+div.bubbles {
+    min-height: 100vh;
+    position: relative;
+    z-index: 0;
+    padding: 50px !important;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #404040;
+    background-color: #ffffff;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased
+}
+
+@media (max-width: 600px) {
+    div.bubbles {
+        padding: 50px 25px !important;
+    }
+}
+
+div.bubbles:after, div.bubbles:before {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    pointer-events: none
+}
+
+div.bubbles:before {
+    top: 14vh;
+    right: -20vw;
+    width: 87vw;
+    height: 87vw;
+    /*background-color: #faf1df;*/
+    background-color: #f2f2f2;
+    -webkit-transform: translate3d(-5%, 0, 0);
+    transform: translate3d(-5%, 0, 0);
+    -webkit-animation: a 10s cubic-bezier(.455, .03, .515, .955) infinite alternate;
+    /*animation: a 20s cubic-bezier(.455, .03, .515, .955) infinite alternate*/
+    animation: a 5s cubic-bezier(.455, .03, .515, .955) infinite alternate
+
+}
+
+div.bubbles:after {
+    top: -18vh;
+    right: -20vh;
+    width: 90vh;
+    height: 90vh;
+    opacity: .5;
+    background-color: var(--bubble2);
+    -webkit-transform: translate3d(0, 10%, 0);
+    transform: translate3d(0, 10%, 0);
+    -webkit-animation: b 5s 2s cubic-bezier(.455, .03, .515, .955) infinite alternate;
+    animation: b 5s 2s cubic-bezier(.455, .03, .515, .955) infinite alternate
+}
+
+.artistname {
+    font-family: Nunito Sans, sans-serif;
+    position: relative;
+    z-index: 2;
+    line-height: 1.6;
+}
+
+.artistdates {
+    font-family: Nunito Sans, sans-serif;
+    position: relative;
+    z-index: 2;
+    line-height: 1.6;
+    font-size: 26px;
+    font-style: italic;
+    margin-bottom: 30px;
+
+}
+
+.artistdescrip {
+    font-family: Nunito Sans, sans-serif;
+    position: relative;
+    z-index: 2;
+    line-height: 1.6;
+    font-size: 22px;
+    height: max-content;
+}
+
+
+@media (max-width: 500px) {
+    .artistname {
+        font-size: 50px;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 500px) {
+    .artistname {
+        margin-top: 20vh;
+        font-size: 48px;
+    }
+
+    .artistdescrip {
+        margin-bottom: 70px;
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sectioncontent {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+}
+
+@media (max-width: 1023px) {
+    div.bubbles:before {
+        top: 12vh;
+        left: -30vw;
+        width: 55vw;
+        height: 55vw;
+    }
+
+    div.bubbles:after {
+        top: -25vh;
+        right: -20vw;
+        width: 65vw;
+        height: 65vw
+    }
+}
+
+@media (min-width: 1023px) {
+    div.bubbles:before {
+        top: 17vh;
+        left: -20vw;
+        width: 40vw;
+        height: 40vw;
+    }
+
+    div.bubbles:after {
+        top: -35vh;
+        right: -12vw;
+        width: 55vw;
+        height: 55vw;
+    }
+}
+
+@media (max-width: 1023px) {
+    div.bubbles {
+        height: max-content;
+        padding: 1em;
+    }
+}
+
+/*End bubbles background*/
+
+
+/*Start painting descriptions*/
+.flexcontainer {
+    line-height: 1.5;
+    color: #fcfcfc;
+    text-rendering: optimizeLegibility;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    -o-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    -o-justify-content: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+
+.textBig {
+    font-size: 1.6em;
+    font-weight: 700;
+    line-height: 70px;
+    margin-left: -8px;
+    position: relative;
+    z-index: 5;
+    color: rgba(255, 255, 255, 0.93);
+}
+
+.textNormal {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 33px;
+    margin-top: 25px;
+}
+
+.textBackground {
+    position: absolute;
+    left: 72px;
+    bottom: -40px;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.flexitem {
+    min-height: 100vh;
+    color: #fff;
+}
+
+.flexcontent {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+
+}
+
+@media (min-width: 1023px) {
+    .flexcontainer {
+        min-height: 100vh;
+    }
+
+    .flexitemLeft {
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        align-items: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        width: 100vw;
+        min-height: 100vh;
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 3em;
+    }
+
+    .flexcontent {
+        width: 55%;
+        margin-left: 60px;
+        /*margin-left: 80px;*/
+    }
+
+    .textBig {
+        margin-top: 7%;
+    }
+
+    .paintingLg {
+        max-height: 30vw;
+        position: relative;
+        z-index: 3;
+        bottom: 82vh;
+        left: 50vw;
+    }
+
+    div.paintingSm {
+        display: none !important;
+    }
+
+
+    .smContainer {
+        display: none !important;
+    }
+
+
+    .flexitemRight {
+        width: 25%;
+    }
+
+    .flexitemLeft {
+        width: 75%;
+    }
+
+}
+
+@media (max-width: 1023px) {
+
+    .textBig {
+        padding: 2em 1em .5em;
+        line-height: 1.2em;
+    }
+
+    .textNormal {
+        margin: 0 1em;
+    }
+
+    .paintingLg {
+        display: none;
+    }
+}
+
+@media (min-width: 724px) and (max-width: 1023px) {
+    .smContainer {
+        padding: 2em 3em 3em;
+    }
+}
+
+@media (max-width: 723px) {
+    .smContainer {
+        padding: 1em;
+    }
+}
+
+@media (min-width: 1600px) {
+    .textBig {
+        font-size: 3.5em;
+    }
+
+    .textNormal {
+        font-size: 28px;
+
+    }
+}
+
+/*End painting descriptions*/
+
+
+/*Begin Video Wrapper -Force resizing for all devices*/
+/*Changing background colors*/
+
+.videoWrapper {
+    position: relative;
+    background-color: #18012E;
+    padding: 10%;
+    animation: mymove 10s infinite;
+}
+
+@keyframes mymove {
+    0% {
+        background: #06000d;
+    }
+    35% {
+        background: #18012E;
+    }
+    85% {
+        background: #010D30;
+    }
+    100% {
+        background: #08000f;
+    }
+}
+
+.videoWrapper iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 900px) {
+    .videoWrapper iframe {
+        width: 854px;
+        height: 480px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .videoWrapper {
+        padding: 5%;
+    }
+
+    .videoWrapper iframe {
+        width: 640px;
+        height: 360px;
+    }
+}
+
+@media only screen and (max-device-width: 600px) {
+    .videoWrapper {
+        padding: 0;
+    }
+
+    .videoWrapper iframe {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+/*Resources & About Pages*/
+a.resources:link {
+    color: #34363E !important;
+}
+
+a.resources:hover {
+    color: #42C6CF !important;
+    text-decoration: none;
+}
+
+.descrip {
+    position: relative;
+    z-index: 4;
+    line-height: 1.6em;
+    font-size: 24px;
+    height: max-content;
+    margin: 25px;
+    color: #34363E !important;
+}
+
+.pararesources {
+    margin-top: 32px;
+    position: relative;
+    z-index: 4;
+    line-height: 1.6em;
+    font-size: 1em;
+    height: max-content;
+    color: #34363E !important;
+}
+
+.leftmarg {
+    margin-left: 20px;
+}
+
+.about {
+    position: relative;
+    z-index: 4;
+    line-height: 1.6em;
+    font-size: 1.2em;
+    height: max-content;
+    color: #34363E !important;
+}
